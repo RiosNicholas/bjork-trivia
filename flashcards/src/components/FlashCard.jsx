@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import FlashCardButton from "./FlashCardButton";
 
 const FlashCard = () => {
+    // TODO: Move this out of the component and into a separate file
     const questionBank = [
         {
             question: "What is Björk's full name?",
@@ -33,6 +34,7 @@ const FlashCard = () => {
         }
     ];
     
+    /* DEFINING REACT HOOKS */ 
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [showAnswer, setShowAnswer] = useState(false);
 
@@ -40,7 +42,7 @@ const FlashCard = () => {
         setShowAnswer(!showAnswer);
     };
 
-    // Callback function to randomize the question
+    /* CALLBACK FUNCTION TO RANDOMIZE THE QUESTIOn DISPLAYED */
     const randomizeQuestion = () => {
         const randomIndex = Math.floor(Math.random() * questionBank.length);
         
