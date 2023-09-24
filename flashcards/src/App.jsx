@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
-import FlashCard from './components/FlashCard.jsx'
 import Header from './components/Header.jsx'
+import FlashCard from './components/FlashCard.jsx'
 
 function App() {
   
