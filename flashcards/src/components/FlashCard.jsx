@@ -60,7 +60,6 @@ const FlashCard = () => {
                 {showAnswer && (
                     <p className="font-normal text-lg capitalize m-1">
                         {questionBank[currentQuestion].answer}
-                        questionBank{}
                     </p>
                 )}
             </div>
