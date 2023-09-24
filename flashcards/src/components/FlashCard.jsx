@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import FlashCardButtons from "./FlashCardButtons";
+import FlashCardButton from "./FlashCardButton";
 
 const FlashCard = () => {
     const questionBank = [
@@ -40,6 +40,17 @@ const FlashCard = () => {
         setShowAnswer(!showAnswer);
     };
 
+    // Callback function to randomize the question
+    const randomizeQuestion = () => {
+        const randomIndex = Math.floor(Math.random() * questionBank.length);
+        
+        // Updating the state 
+        setCurrentQuestion(randomIndex);
+        
+        // Hide the answer when changing the question
+        setShowAnswer(false); 
+    };
+
     return (
         <div className="flex flex-col justify-center items-center h-full m-36" id="game-container">
             <div onClick={revealAnswer} className="flex flex-col justify-center content-center align-middle p-10 w-1/3 h-48 bg-orange-200 rounded-lg shadow-lg text-center hover:cursor-pointer">
@@ -49,10 +60,11 @@ const FlashCard = () => {
                 {showAnswer && (
                     <p className="font-normal text-lg capitalize m-1">
                         {questionBank[currentQuestion].answer}
+                        questionBank{}
                     </p>
                 )}
             </div>
-            <FlashCardButtons />
+            <FlashCardButton onRandomize={randomizeQuestion} />
         </div>
     );
 };
