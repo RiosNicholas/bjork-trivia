@@ -1,13 +1,14 @@
 import React from "react";
 import BjorkLogo from '../../public/bjork-logo.png';
-import '.././App.css';
+import '../App.css'; 
 
 const Header = () => {
+
     return (
-        <div className="flex justify-center bg-purple-300">
-            <img className="w-1/4 justify-center p-8" src={BjorkLogo}></img>
+        <div className="flex flex-col items-center justify-center bg-purple-300">
+            <img className="w-1/4 p-8" src={BjorkLogo} alt="Bjork Logo" />
         </div>
     );
 };
 
-export default Header; 
+export default Header;

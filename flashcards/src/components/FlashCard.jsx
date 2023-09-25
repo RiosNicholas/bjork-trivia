@@ -65,7 +65,10 @@ const FlashCard = () => {
                     </p>
                 )}
             </div>
-            <FlashCardButton onRandomize={randomizeQuestion} />
+            <div className="flex flex-col">
+                <FlashCardButton onRandomize={randomizeQuestion} />
+                  <p className="text-white italic text-sm text-center font-medium">Number of Cards: {questionBank.length}</p>
+            </div>
         </div>
     );
 };
