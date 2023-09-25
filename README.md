@@ -4,7 +4,7 @@ Submitted by: **Nicholas Rios**
 
 This web app: **Challenge your knowledge of award-winning artist Björk through an interactive trivia game**
 
-Time spent: **3* hours spent in total
+Time spent: *3* hours spent in total
 
 ## Required Features
 
@@ -26,7 +26,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='2023-09-24 20-22-54.gif2023-09-24 20-30-51.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='2023-09-24 20-30-51.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Notes
 
