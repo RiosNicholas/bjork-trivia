@@ -1,10 +1,14 @@
 import React from "react";
 
-const FlashCardButton = () => {
+const FlashCardButton = ({ onRandomize }) => {
+    const randomizeQuestion = () => {
+        // Randomize the question
+        onRandomize();
+    };
     return (
         <>
             <div className="flex justify-center rounded-lg shadow-lg m-2">
-                <button className="bg-blue-600 text-white">Randomize</button>
+                <button onClick={randomizeQuestion} className="bg-blue-600 text-white">Randomize</button>
             </div>
         </>
     );
