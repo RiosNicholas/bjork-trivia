@@ -26,15 +26,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='https://imgur.com/a/PrfDbZT' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-<img src='2023-09-24 20-22-54.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+<img src='2023-09-24 20-22-54.gif2023-09-24 20-30-51.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Notes
 
