@@ -1,8 +1,8 @@
-// FlashCardContainer.js
 import React, { useState } from "react";
 import questionBank from "../assets/questionBank";
 import FlashCard from "./FlashCard";
 import FlashCardButton from "./FlashCardButton";
+import AnswerGuess from "./AnswerGuess";
 
 const FlashCardContainer = () => {
     /* DEFINING REACT HOOKS */ 
@@ -32,7 +32,10 @@ const FlashCardContainer = () => {
                 revealAnswer={revealAnswer}
                 questionBank={questionBank}
             />
-
+            <AnswerGuess 
+                currentQuestion={currentQuestion}
+                questionBank={questionBank}
+            />
             <FlashCardButton onRandomize={randomizeQuestion} />
         </div>
     );
