@@ -14,7 +14,7 @@ The following **required** functionality is completed:
 - [X] **A single card at a time is displayed, only showing one of the components of the information pair**
 - [X] **A list of card pairs is created**
 - [X] **Clicking on the card shows the corresponding component of the information pair**
-- [Xg] **Clicking the next button displays a random new card**
+- [X] **Clicking the next button displays a random new card**
 
 The following **optional** features are implemented:
 
