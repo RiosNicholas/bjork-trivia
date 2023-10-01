@@ -20,7 +20,7 @@ The following **required** functionality is completed:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='2023-10-01 19-26-09.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='2023-10-01 19-26-0.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 
 ## License
