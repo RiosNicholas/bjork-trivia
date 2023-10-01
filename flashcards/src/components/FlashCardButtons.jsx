@@ -14,7 +14,7 @@ const FlashCardButtons = ({ onRandomize, currentQuestion, handleLeftArrowClick, 
                 currentQuestion={currentQuestion}
                 questionBank={questionBank}
             />
-            <div className="flex flex-col w-40 justify-center m-2" >
+            <div className="flex flex-col w-40 justify-center m-2">
                 <button 
                     onClick={randomizeQuestion} className="bg-blue-600 text-white rounded-lg shadow-lg w-40 m-2" 
                     id='randomize-button'
