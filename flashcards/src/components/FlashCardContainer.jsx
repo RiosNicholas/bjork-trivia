@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import questionBank from "../assets/questionBank";
 import FlashCard from "./FlashCard";
-import FlashCardButton from "./FlashCardButton";
 import AnswerGuess from "./AnswerGuess";
+import FlashCardButtons from "./FlashCardButtons";
 
 const FlashCardContainer = () => {
     /* DEFINING REACT HOOKS */ 
@@ -24,6 +24,15 @@ const FlashCardContainer = () => {
         setShowAnswer(false); 
     };
 
+    const handleLeftArrowClick = (newQuestion) => {
+        setCurrentQuestion(newQuestion);
+        setShowAnswer(false);
+    };
+
+    const handleRightArrowClick = (newQuestion) => {
+        setCurrentQuestion(newQuestion);
+        setShowAnswer(false);
+    };    
     return (
         <div className="flex flex-col justify-center items-center h-full m-36" id="game-container">
             <FlashCard
@@ -36,7 +45,13 @@ const FlashCardContainer = () => {
                 currentQuestion={currentQuestion}
                 questionBank={questionBank}
             />
-            <FlashCardButton onRandomize={randomizeQuestion} />
+            <FlashCardButtons 
+                onRandomize={randomizeQuestion} 
+                currentQuestion={currentQuestion} 
+                handleLeftArrowClick={handleLeftArrowClick}
+                handleRightArrowClick={handleRightArrowClick}   
+                questionBank={questionBank}
+            />
         </div>
     );
 };
